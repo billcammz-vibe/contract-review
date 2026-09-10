@@ -1,0 +1,97 @@
+{
+  "name": "Standard Customer-Side SaaS Playbook",
+  "version": "1.0",
+  "governingLawPreference": "Delaware, USA",
+  "items": [
+    {
+      "id": "liability-cap-12mo",
+      "clauseType": "liability_cap",
+      "title": "Liability capped at 12 months' fees",
+      "preferredPosition": "Each party's aggregate liability is capped at the fees paid or payable in the 12 months preceding the claim, and the cap applies mutually.",
+      "rationale": "Uncapped liability or high multiples create open-ended financial exposure.",
+      "severityIfMissing": "high",
+      "severityIfDeviates": "high"
+    },
+    {
+      "id": "liability-carveouts-narrow",
+      "clauseType": "liability_cap",
+      "title": "Narrow, mutual cap carve-outs",
+      "preferredPosition": "Exceptions to the liability cap are limited to breach of confidentiality, IP infringement, and indemnification obligations, and apply equally to both parties.",
+      "rationale": "Broad or one-sided carve-outs (e.g. 'any breach') effectively nullify the cap.",
+      "severityIfMissing": "medium",
+      "severityIfDeviates": "high"
+    },
+    {
+      "id": "termination-convenience-30d",
+      "clauseType": "termination",
+      "title": "Termination for convenience on 30 days' notice",
+      "preferredPosition": "Either party may terminate for convenience on 30 days' written notice, with a pro-rata refund of prepaid, unused fees.",
+      "rationale": "Prevents lock-in to an underperforming vendor.",
+      "severityIfMissing": "medium",
+      "severityIfDeviates": "medium"
+    },
+    {
+      "id": "termination-cause-cure-30d",
+      "clauseType": "termination",
+      "title": "30-day cure period for breach",
+      "preferredPosition": "Termination for material breach is permitted only if the breach remains uncured 30 days after written notice.",
+      "rationale": "Protects against abrupt termination for a curable issue.",
+      "severityIfMissing": "medium",
+      "severityIfDeviates": "low"
+    },
+    {
+      "id": "renewal-optout-60d",
+      "clauseType": "renewal",
+      "title": "Auto-renewal only with a short opt-out window",
+      "preferredPosition": "No auto-renewal; or, if present, the renewal term is 12 months or less and the opt-out notice is 60 days or less before the renewal date.",
+      "rationale": "Long opt-out windows trap the customer into unwanted renewals.",
+      "severityIfMissing": "low",
+      "severityIfDeviates": "medium"
+    },
+    {
+      "id": "payment-net-30",
+      "clauseType": "payment",
+      "title": "Net 30 with a modest late fee",
+      "preferredPosition": "Invoices are due Net 30; any late fee is 1.5% per month or less; there are no unilateral mid-term price increases.",
+      "rationale": "Aggressive payment terms strain cash flow and budgeting.",
+      "severityIfMissing": "low",
+      "severityIfDeviates": "low"
+    },
+    {
+      "id": "governing-law-us",
+      "clauseType": "governing_law",
+      "title": "US governing law and venue",
+      "preferredPosition": "The agreement is governed by the law of a US state (Delaware preferred) with venue in that same state; no foreign jurisdiction or foreign arbitration seat.",
+      "rationale": "Foreign venues raise the cost and uncertainty of enforcement.",
+      "severityIfMissing": "medium",
+      "severityIfDeviates": "medium"
+    },
+    {
+      "id": "confidentiality-mutual-3yr",
+      "clauseType": "confidentiality",
+      "title": "Mutual confidentiality with 3-year survival",
+      "preferredPosition": "Confidentiality obligations are mutual and survive for 3 years after termination, and indefinitely for trade secrets.",
+      "rationale": "One-way or short-lived confidentiality under-protects customer data.",
+      "severityIfMissing": "high",
+      "severityIfDeviates": "medium"
+    },
+    {
+      "id": "indemnity-ip-from-vendor",
+      "clauseType": "indemnification",
+      "title": "Vendor IP-infringement indemnity",
+      "preferredPosition": "The vendor defends and indemnifies the customer against third-party claims that the service infringes intellectual property rights.",
+      "rationale": "The customer should not bear the risk of the vendor's own IP.",
+      "severityIfMissing": "high",
+      "severityIfDeviates": "medium"
+    },
+    {
+      "id": "assignment-consent-required",
+      "clauseType": "assignment",
+      "title": "No assignment without consent",
+      "preferredPosition": "Neither party may assign without the other's prior written consent, not to be unreasonably withheld; assignment to an affiliate or a successor to substantially all of the business is permitted on notice.",
+      "rationale": "Stops the contract being transferred to an unacceptable third party.",
+      "severityIfMissing": "medium",
+      "severityIfDeviates": "low"
+    }
+  ]
+}
